@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form-tag</title>
+  <style>
+    .body{
+      margin-right: 100px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    Username:<input type="text" placeholder="Enter your name" required="true"> <br>
+    Password:<input type="password" name="" id="" placeholder="Enter password">
+  </form>
+  <br><br>
+  <form action="/php/submit.php" method="post">
+    Username:<input type="text" placeholder="Enter your name" required="true"> <br>
+    Password:<input type="password" name="" id="" placeholder="Enter password">
+    <br>
+    <input type="submit">
+  </form>
+  <br><br>
+  <form action="/php/submit.php">
+    <label for="username">Username:</label>
+    <input type="text" name="" id="username" placeholder="Enter your username" required="true">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="" id="password" placeholder="Enter Password" required="true">
+    <br>
+    <label for="date">Date</label>
+    <input type="date" name="" id="date" required="true">
+    <br>
+    <label for="file">Upload</label>
+    <input type="file" name="" id="file" required="true">
+    <br>
+    <label for="color">Color</label>
+    <input type="color" name="" id="color">
+    <br>
+    <label for="range">Range</label>
+    <input type="range" name="" id="range">
+    <br>
+    <input type="submit">
+    <br>
+    <input type="button" value="Clicked" name="" id="">
+    <br><br><h1>Radio</h1>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="Male"><br>
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="Female"><br>
+    <label for="other">Other</label>
+    <input type="radio" name="gender" id="other" value="Other"><br><br>
+
+    <h1>checkbox</h1>
+    <label for="banana">Banana</label>
+    <input type="checkbox" name="fruit" id="banana" value="Banana"><br>
+    <label for="apple">Apple</label>
+    <input type="checkbox" name="fruit" id="apple" value="Apple"><br>
+    <label for="orange">Orange</label>
+    <input type="checkbox" name="fruit" id="orange" value="Orange"><br><br>
+    <label for="country">Select your country</label>
+    <select name="country" id="country">
+      <option value="Nepal">Nepal</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="others">Others</option>
+    </select>
+    <br><br>
+    <textarea name="story" id="story" cols="30" rows="10"></textarea><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Fwp5wyORN0?si=9g-vzvtK6M30Z7pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://en.wikipedia.org/wiki/Canon_EOS" frameborder="0" width="1000" height="300"></iframe>
+  </form>
+</body>
+</html>
